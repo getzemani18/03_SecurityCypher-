@@ -2,25 +2,40 @@
 
 ---
 Índice
-
-    
+ 1. Descripcion
+ 2. User Definition
+ 3. Diagrama de flujo
+ 4. UI
+ 5. Pseudocodigo 
+ 6. Lenguajes Utilizados
 ---
 
-## 1. Description
-Crear una aplicacion para celular dirigida a empleados de un bar en la Ciudad de México.
-
-
----
+## 1. Descrpcion 
+Crear una aplicacion para Celular y Computadora, donde los empleados puedan administrar a los clientes del Antro. 
 
 ## 2. User Definition:
-Que los usuarios puedan usar la aplicación en su teléfono celular y en su computadora 
+La aplicacion constara de un código que los clientes podran tener para entarar al Antro. Dentro del Antro ya podran cifrar alguna palabra para despues desifrarla y asi se comunicaran entre ellos. 
 
 
+## 3. Diagrama de flujo
 
-## Diagrama de flujo
+![Diagrama de Flujo](./src/assets/diagrama.png)
 
-![Diagrama de Flujo](./src/assets/diagrama.jpg)
+## 4. UI(user interface)
 
-## UI(user interface)
+![UI](./src/assets/)
 
-![UI](./src/assets/UI.jpeg)
+## 5. Pseudocodigo
+
+## 6.  Lenguajes Utilizados
++ HTML5
++ CSS
++ JavaScript
+
+## 7. Testing
+
+## 8. Deployment
+
+## 9.  CopyRight
+
+© Copyright 2021-Proyecto#3-SegurityCypher  Getzemani Ramirez & Monica Macal
