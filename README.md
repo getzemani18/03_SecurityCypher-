@@ -13,9 +13,14 @@
 ---
 
 ## 2. User Definition:
-**User: Security Chief of a Club**
+
 
 
 
 ## Diagrama de flujo
-![Diagrama de flujo](./assets/diagrama1v.jpeg)
+
+![Diagrama de Flujo](./src/assets/diagrama.jpg)
+
+## UI(user interface)
+
+![UI](./src/assets/UI.jpeg)
