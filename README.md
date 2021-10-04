@@ -47,18 +47,18 @@ if else
 ```
 ### Regresa al inicio 
 
-```
+``` js
 Funcion // Codificar caracteres ingresados
 ```
 
-```
+``` js
 input 1 // Texto decifrable
 ```
 Boton
 + Cifrar
 + Decifrar
 
-```
+```js
 Input 2 // Mensaje cifrado
 ```
 
@@ -67,14 +67,14 @@ Boton
 
  ## Seccion HTML
 
- ```
+ ```html
  <textarea id="textArea">We are learning to copy text to clipboard in JavaScript.</textarea>
     <button onclick="copyToClipBoard()">Copy</button>
 ```
 
 ## Seccion JavaScript 
 
-```
+``` js
 function copyToClipBoard() {
 
     var content = document.getElementById('textArea');
