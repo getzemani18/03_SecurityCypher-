@@ -33,11 +33,14 @@ Cada miembro del staff cuenta con un password o "pseudónimo" para acceder.
 
 ## 4. UI(user interface)
 
-#### Window 1 ![UI](./src/assets/alert.png)
+#### Window 1 
+![UI](./src/assets/alert.png)
 
-#### Window 2 ![UI](./src/assets/Prompt1.png)
+#### Window 2 
+![UI](./src/assets/Prompt1.png)
 
-#### Window 3 ![UI](./src/assets/Boceto_UIapp.png)
+#### Window 3 
+![UI](./src/assets/Boceto_UIapp.png)
 
 
 
