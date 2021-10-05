@@ -2,24 +2,28 @@
 
 ---
 Índice
- 1. Descripcion
- 2. User Definition
+
+ 1. Descripción
+ 2. Historias de Usuario
  3. Diagrama de flujo
  4. UI
- 5. Pseudocodigo 
+ 5. Pseudocódigo
  6. Lenguajes Utilizados
----
-
-## 1. Descrpcion 
-Crear una aplicacion para Celular y Computadora, donde los empleados puedan administrar a los clientes del Antro. 
 
 ---
 
-## 2. User Definition:
-La aplicacion constara de un código que los clientes podran tener para entarar al Antro. Dentro del Antro ya podran cifrar alguna palabra para despues desifrarla y asi se comunicaran entre ellos. 
+## 1. Descripción
+
+Se presenta el prototipo de  una aplicación móvil que también funciona en el ordenador; esta app está basada en el "cifrado César" y con ella se podrá codificar y decodificar mensajes.
 
 ---
 
+## 2. User Definition
+
+La aplicación esta dirigida al personal de seguridad de un antro,  en ella el personal de seguridad se  puede comunicar entre sí, para aumentar/mejorar la seguridad del sitio.
+Cada miembro del staff cuenta con un password o "pseudónimo" para acceder.
+
+---
 
 ## 3. Diagrama de flujo
 
@@ -29,11 +33,17 @@ La aplicacion constara de un código que los clientes podran tener para entarar 
 
 ## 4. UI(user interface)
 
-![UI](./src/assets/)
+#### Window 1 ![UI](./src/assets/alert.png)
+
+#### Window 2 ![UI](./src/assets/Prompt1.png)
+
+#### Window 3![UI](./src/assets/Boceto_UIapp.png)
+
+
 
 ---
 
-## 5. Pseudocodigo
+## 5. Pseudocódigo
 
 ``` JS
 Alert "Ingresa tu clave de acceso o Pseudocodigo"
@@ -45,7 +55,8 @@ Prompt Confirm
 if else 
 "Clave incorrecta" --> Alert "Acceso Denegado"
 ```
-### Regresa al inicio 
+
+### Regresa al inicio
 
 ``` js
 Funcion // Codificar caracteres ingresados
@@ -54,7 +65,9 @@ Funcion // Codificar caracteres ingresados
 ``` js
 input 1 // Texto decifrable
 ```
+
 Boton
+
 + Cifrar
 + Decifrar
 
@@ -62,17 +75,18 @@ Boton
 Input 2 // Mensaje cifrado
 ```
 
-Boton 
+Boton
+
 + Copiar texto
 
- ## Seccion HTML
+## Seccion HTML
 
  ```html
  <textarea id="textArea">We are learning to copy text to clipboard in JavaScript.</textarea>
     <button onclick="copyToClipBoard()">Copy</button>
 ```
 
-## Seccion JavaScript 
+## Seccion JavaScript
 
 ``` js
 function copyToClipBoard() {
@@ -89,6 +103,7 @@ function copyToClipBoard() {
 ---
 
 ## 6.  Lenguajes Utilizados
+
 + HTML5
 + CSS
 + JavaScript
