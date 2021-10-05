@@ -37,7 +37,7 @@ Cada miembro del staff cuenta con un password o "pseudónimo" para acceder.
 
 #### Window 2 ![UI](./src/assets/Prompt1.png)
 
-#### Window 3![UI](./src/assets/Boceto_UIapp.png)
+#### Window 3 ![UI](./src/assets/Boceto_UIapp.png)
 
 
 
