@@ -1,5 +1,6 @@
 let cifrado;
 window.cipher = {
+<<<<<<< HEAD
   encode:(offset,string) => { 
     for (let i=0; i<(string.length); i++){
       let asciiPosition= string.charCodeAt (i);
@@ -12,3 +13,8 @@ window.cipher = {
           }
       };
 encode();
+=======
+    encode: function
+  
+};
+>>>>>>> 9e4222041937601f1cb48d73077ba854f0a8f24f
