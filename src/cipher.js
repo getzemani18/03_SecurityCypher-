@@ -11,6 +11,8 @@ window.cipher = {
               return result;
           },
 
+          
+
            decode:(offset,string) => { // Una funcion para  empezar a decodificar
             for (let i=0; i< string.length ; i++){   //  Esta funcion itera cada letra que se ingresa
               let asciiPosition= string.charCodeAt (i);   // la i es la posicion del numero que signas para ponerlo en el numero del abecedario
