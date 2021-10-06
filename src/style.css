@@ -1,47 +1,48 @@
 /* Backgroun de todo el body*/
 body {
-    background: #283c86;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    text-align: center;
+  background: #283c86;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
 }
 
 /* Titulo*/
 .title {
-    font-size: 50px;
-    color: aliceblue;
-    font-style: italic;
-    text-align: center;
+  font-size: 50px;
+  color: aliceblue;
+  font-style: italic;
+  text-align: center;
 
 }
 
 /* Modificacion del texto "Mensaje"*/
 h2 {
-    text-align: center;
-    font-size: 35px;
-    font-style: oblique;
+  text-align: center;
+  font-size: 35px;
+  font-style: oblique;
 }
 
 /* Modificacion de la caja -codificar*/
 #mensaje {
-    width: 350px;
-    height: 150px;
-    margin: 10px;
-    padding: 25px;
-    border: 5px solid black;
+  width: 350px;
+  height: 150px;
+  margin: 10px;
+  padding: 25px;
+  border: 5px solid black;
 }
 
-/* Botones*/
+/*Boton cifrar*/
 
-.button {
-    background: #eb94d0;
-    background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+#cifrar{
+  
+  background: #eb94d0;
+  /*crear degradados*/
+  background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
   background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
   background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
   background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
   background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
-
-
+  /*Bordes Curveados*/
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
@@ -54,11 +55,36 @@ font-family: Arial;
   font-size: 27px;
   padding: 19px;
   text-decoration: none;
-  float:inherit;
+}
 
-  }
+/*Boton Decifrar*/
 
-.button:hover {
+#decifrar{
+  
+  background: #eb94d0;
+  /*crear degradados*/
+  background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+  /*Bordes Curveados*/
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+text-shadow: 3px 2px 1px #9daef5;
+  -webkit-box-shadow: 6px 5px 24px #666666;
+  -moz-box-shadow: 6px 5px 24px #666666;
+  box-shadow: 6px 5px 24px #666666;
+font-family: Arial;
+  color: #fafafa;
+  font-size: 27px;
+  padding: 19px;
+  text-decoration: none;
+}
+/*Poner el cursor encima*/
+
+#decifrar:hover {
   background: #2079b0;
   background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
   background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
@@ -68,34 +94,69 @@ font-family: Arial;
   text-decoration: none;
 }
 
-@media screen and (min-width: 600px) {
-    .button {
-      float: center;
-      width: 15%;
-    }
-  }
+/*Boton Copiar*/
+#copiar{
+  
+  background: #eb94d0;
+  /*crear degradados*/
+  background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+  /*Bordes Curveados*/
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+text-shadow: 3px 2px 1px #9daef5;
+  -webkit-box-shadow: 6px 5px 24px #666666;
+  -moz-box-shadow: 6px 5px 24px #666666;
+  box-shadow: 6px 5px 24px #666666;
+font-family: Arial;
+  color: #fafafa;
+  font-size: 27px;
+  padding: 19px;
+  text-decoration: none;
+}
 
-  /* Modificar el texto "Ingresar mensaje"*/
+/*Poner el cursor encima*/
+
+#copiar:hover {
+  background: #2079b0;
+  background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
+  text-decoration: none;
+}
+
+
+
+
+/*Modificar texto "Ingresar Mensaje"*/
+
 h3 {
-    text-align: center;
-    font-size: 35px;
-    font-style: oblique;
+  text-align: center;
+  font-size: 35px;
+  font-style: oblique;
 }
 
 /* Modificacion de la caja -codificar*/
 #mensaje1 {
-    width: 350px;
-    height: 150px;
-    margin: 10px;
-    padding: 25px;
-    border: 5px solid black;
+  width: 350px;
+  height: 150px;
+  margin: 10px;
+  padding: 25px;
+  border: 5px solid black;
 }
+
 
 /* Footer*/
 footer > span {
-    margin-top: 5px;
-    display: flex;
-    justify-content: center;
-    font-size: 0.9em;
-    color: white;
-  }
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  font-size: 0.9em;
+  color: white;
+}
