@@ -3,7 +3,6 @@ alert("Bienvenido");
 var contenedorOcultar = document.getElementById("ocultar");//llamamos al id desde js
 console.log(contenedorOcultar)//verificamos que funcione en el browser
 contenedorOcultar.style.visibility = "hidden"//ocultamos desde JS el div ocultar
-
 // Cuando la persona ingrese la contraseña correcta se desactiva la propiedad hidden
 let userPassword = prompt('Ingresa tu contraseña o pseudocodigo') //variable de contraseña del user
 console.log(userPassword)
@@ -12,7 +11,7 @@ let correctPassword = "123"
 // si el user ingresa la contraseña correcta puede acceder a la pagina
 if (userPassword === correctPassword){
     alert('password correcto')
-    //si el password es correcto omitir el estilo hidden 
+    //si el password es correcto omitir el estilo hidden
 contenedorOcultar.style.visibility = ""
 }else {
     //alert que diga que la contraseña es incorrecta y colocar sonido "error"
@@ -21,19 +20,6 @@ alert('password incorrecto')
 
 
 
-
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-
-
-=======
 // Hacer funcionar los botones 
 window.onload = function() { //El evento load dispara el evento al final del proceso de carga del documento. En este punto, todos los objetos del documento son DOM
 // Boton cifrar
@@ -56,4 +42,3 @@ cifrar.addEventListener("click", () => {
     document.getElementById(mensaje1).innerHTML = window.cipher.decode(offset,string); // llama  el resultado de la function para ponerlo en el sector dentro del HTML
 });
 };
->>>>>>> 514fd106b121723828ed3ed44c1fc2554b834d6b
