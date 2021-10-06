@@ -40,3 +40,14 @@ cifrar.addEventListener("click", () => {
     document.getElementById(mensaje1).innerHTML = window.cipher.decode(offset,string); // llama  el resultado de la function para ponerlo en el sector dentro del HTML
 });
 };
+
+//boton copiar
+function copyToClipBoard() {
+
+    var content = document.getElementById('copiar');
+    
+    content.select();
+    document.execCommand('copy');
+
+    alert("Copied!");
+}
