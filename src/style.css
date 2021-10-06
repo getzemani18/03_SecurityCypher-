@@ -4,14 +4,15 @@ body {
   background: -webkit-linear-gradient(to right, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
+   
+}
+.container {
   display: flex;
   flex-flow:row wrap;
   height: auto;
   width: auto;
-
-  
+  justify-content: center;
 }
-
 /* Titulo*/
 .title {
   font-size: 50px;
@@ -21,11 +22,16 @@ body {
 
 }
 
+h1{
+  text-align: center;
+  font-size: 24px;
+}
+
 /* Modificacion del texto "Mensaje"*/
 h2 {
   text-align: center;
-  font-size: 35px;
-  font-style: oblique;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Modificacion de la caja -codificar*/
@@ -142,7 +148,7 @@ font-family: Arial;
 
 /*Modificar texto "Ingresar Mensaje"*/
 
-h3 {
+h4 {
   text-align: center;
   font-size: 35px;
   font-style: oblique;

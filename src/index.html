@@ -5,46 +5,43 @@
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body> 
-<header>
-  <h1 class="title">Antro.Inn Cypher Code</h1>
-  <main>
-    <!-- Aquí inicia el div de ocultar -->
-    <div id="ocultar">
-      <h1># Desplazamientos</h1>
-      <div><input type="number" id="desplazamientos" min="1" max="26" class="butoncero"></div>
+   <body> 
+    <header>
+     <h1 class="title">Antro.Inn Cypher Code</h1>
+    </header>
   
-    <h2>Mensaje</h2>
+    <main class="container">
+    <!-- Aquí inicia el div de ocultar -->
+      <div id="ocultar">
+       <h2># Desplazamientos</h2>
+         <div><input type="number" id="desplazamientos" min="1" max="26" class="butoncero"></div>
+  
+      <!-- Primer recuadro del cifrado -->
+    <h3>Mensaje</h3>
     <p><input type="text" id="mensaje"></p>
     <div id="button1">
     <button type="button" id="cifrar">Cifrar</button> 
     <button type="button" id="decifrar" >Decifrar</button>
   </div>
 
-    <h3>Ingresar MENSAJE</h3>
+  <!-- Recuadro y boton copiar -->
+    <h4>Ingresar mensaje</h4>
     <P><input type="text" id="mensaje1"></P>
       <button type="button" id="copiar">Copiar</button>
     
-
-    <div id="contraseñacorrecta" class="respuestaunica"></div>
-   </div> <!-- Hasta aqui cierra el div de ocultar -->
+<!-- Hasta aqui cierra el div de ocultar -->
+   </div> 
   </main>
-</header>
 
-
-
-
-<hr>
-<footer>
-  <span>
+  <hr>
+   <footer>
+    <span>
     © Copyright 2021-Proyecto#3-SegurityCypher Getzemani Ramirez & Monica Macal
-  </span>
-</footer>
+    </span>
+   </footer>
 </div>
     <div id="root"></div>
-    
     <script src="cipher.js"></script>
     <script src="index.js"></script>
-    
   </body>
 </html>
