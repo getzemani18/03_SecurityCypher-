@@ -42,3 +42,5 @@ cifrar.addEventListener("click", () => {
     document.getElementById(mensaje1).innerHTML = window.cipher.decode(offset,string); // llama  el resultado de la function para ponerlo en el sector dentro del HTML
 });
 };
+
+// Boton Copiar
