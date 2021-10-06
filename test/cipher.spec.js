@@ -14,7 +14,8 @@ describe('cipher', () => {
 
     it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offest 33' ,()=>{
       assert.equal(cifrado)
-    }
+    });
+
   });
 
   describe('cipher.decode', () => {
