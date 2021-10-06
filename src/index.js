@@ -19,21 +19,6 @@ contenedorOcultar.style.visibility = ""
 alert('password incorrecto')
 }
 
-
-
-
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-
-
-=======
 // Hacer funcionar los botones 
 window.onload = function() { //El evento load dispara el evento al final del proceso de carga del documento. En este punto, todos los objetos del documento son DOM
 // Boton cifrar
@@ -56,4 +41,3 @@ cifrar.addEventListener("click", () => {
     document.getElementById(mensaje1).innerHTML = window.cipher.decode(offset,string); // llama  el resultado de la function para ponerlo en el sector dentro del HTML
 });
 };
->>>>>>> 514fd106b121723828ed3ed44c1fc2554b834d6b

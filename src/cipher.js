@@ -1,4 +1,4 @@
-let cifrado; 
+let cifrado;
 window.cipher = {
   encode:(offset,string) => { 
     for (let i=0; i< string.length ; i++){
