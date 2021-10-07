@@ -2,18 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+  crossorigin="anonymous"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+    </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+      </style>
   </head>
    <body> 
     <header>
+      <div id="square">
      <h1 class="title">Antro.Inn Cypher Code</h1>
+     </div>
     </header>
-  
-    <main class="container">
+    <form id="form">
+     <main class="container">
     <!-- Aquí inicia el div de ocultar -->
       <div id="ocultar">
-       <h2># Desplazamientos</h2>
+       <h2>#Desplazamientos</h2>
          <div><input type="number" id="desplazamientos" min="1" max="26" class="butoncero"></div>
   
       <!-- Primer recuadro del cifrado -->
@@ -21,25 +34,26 @@
     <p><input type="text" id="mensaje"></p>
     <div id="button1">
     <button type="button" id="cifrar">Cifrar</button> 
-    <button type="button" id="decifrar" >Decifrar</button>
+    <button type="button" id="decifrar">Decifrar</button>
   </div>
 
   <!-- Recuadro y boton copiar -->
-    <h4>Ingresar mensaje</h4>
-    <textarea  class="mensaje1"></textarea>
-    <button  id="copiar" onclick="copyToClipBoard()">Copy</button>
-
-
-    
-
+    <h4>Descifra el mensaje</h4>
+    <p><input type="text" id="mensaje1"></p>
+      <button type="button" id="copiar">Copiar</button>
     
 <!-- Hasta aqui cierra el div de ocultar -->
    </div> 
   </main>
-
-  <hr>
+</form>
+  <!--<hr> -->
    <footer>
     <span>
+      <a href=""target=”_blank”><i class="fab fa-linkedin"></i>Amanda Alvarado</a>
+      <br>
+      <a href="https://www.linkedin.com/in/m%C3%B3nica-macal-b35989140/"target=”_blank”><i class="fab fa-linkedin"></i>Mónica Macal</a>
+      
+      <br>
     © Copyright 2021-Proyecto#3-SegurityCypher Getzemani Ramirez & Monica Macal
     </span>
    </footer>
