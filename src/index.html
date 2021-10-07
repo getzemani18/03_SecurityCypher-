@@ -33,14 +33,14 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
     <h3>Mensaje</h3>
     <p><input type="text" id="mensaje"></p>
     <div id="button1">
-    <button type="button" id="cifrar">Cifrar</button> 
+    <button type="button" id="cifrar" >Cifrar</button> 
     <button type="button" id="decifrar">Decifrar</button>
   </div>
 
   <!-- Recuadro y boton copiar -->
     <h4>Descifra el mensaje</h4>
-    <p><input type="text" id="mensaje1"></p>
-      <button type="button" id="copiar">Copiar</button>
+    <textarea  class="mensaje1"></textarea>
+    <button  id="copiar" onclick="copyToClipBoard()">Copy</button>
     
 <!-- Hasta aqui cierra el div de ocultar -->
    </div> 
@@ -49,9 +49,9 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
   <!--<hr> -->
    <footer>
     <span>
-      <a href=""target=”_blank”><i class="fab fa-linkedin"></i>Amanda Alvarado</a>
+      <a href=""target="_blank"><i class="fab fa-linkedin"></i>Amanda Alvarado</a>
       <br>
-      <a href="https://www.linkedin.com/in/m%C3%B3nica-macal-b35989140/"target=”_blank”><i class="fab fa-linkedin"></i>Mónica Macal</a>
+      <a href="https://www.linkedin.com/in/m%C3%B3nica-macal-b35989140/"target="_blank"><i class="fab fa-linkedin"></i>Mónica Macal</a>
       
       <br>
     © Copyright 2021-Proyecto#3-SegurityCypher Getzemani Ramirez & Monica Macal
@@ -59,7 +59,9 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
    </footer>
 </div>
     <div id="root"></div>
+     
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+
   </body>
 </html>

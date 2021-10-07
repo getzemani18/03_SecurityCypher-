@@ -39,6 +39,19 @@ cifrar.addEventListener("click", () => {
     window.cipher.decode(offset, string); // se mandan los valores obtenidos a la funcion encode 
     document.getElementById(mensaje1).innerHTML = window.cipher.decode(offset,string); // llama  el resultado de la function para ponerlo en el sector dentro del HTML
 });
-};
+}; 
 
+/*
 //boton copiar
+function copyToClipBoard() {
+    alert("copy to clipboard activo")
+    var content = document.getElementById('copiar');
+    console.log(content)
+
+    content.select();
+    console.log("sect executed")
+   // document.execCommand('copy');
+
+    alert("Copied!");
+}
+*/
