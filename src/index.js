@@ -24,20 +24,20 @@ window.onload = function() { //El evento load dispara el evento al final del pro
 const cifrar = document.getElementById("cifrar"); // llamar al boton en HTML
 cifrar.addEventListener("click", () => {
 // Al botón se le adicióna el click y lo que sucede cuando éste evento sucede.
-let offset = document.getElementById('mensaje').value // se guarda el valor de "offset" en la variable con el cipher.js
-let string = document.getElementById('desplazamientos').value // se guarda el valor "desplazamientos" en la variable 
+let string = document.getElementById('mensaje').value // se guarda el valor de "offset" en la variable con el cipher.js
+let offset = document.getElementById('desplazamientos').value // se guarda el valor "desplazamientos" en la variable 
 cipher.encode(offset, string); // se mandan los valores obtenidos a la funcion encode 
-document.getElementById('mensaje1').innerHTML = cipher.encode(offset,string); // llama  el resultado de la function para ponerlo en el sector dentro del HTML
+document.getElementById('mensaje').innerHTML = cipher.encode(offset,string); // llama  el resultado de la function para ponerlo en el sector dentro del HTML
 }); 
 
 // Boton para decifrar
 const decifrar = document.getElementById("decifrar"); // llamar al boton html
 cifrar.addEventListener("click", () => {
     // Al botón se le adicióna el click y lo que sucede cuando éste evento sucede.
-    let offset = document.getElementById(mensaje).value // se guarda el valor de "offset" en la variable con el cipher.js
-    let string = document.getElementById(desplazamientos).value  // se guarda el valor "desplazamientos" en la variable
+    let string = document.getElementById('mensaje1').value // se guarda el valor de "offset" en la variable con el cipher.js
+    let offset = document.getElementById(desplazamientos).value  // se guarda el valor "desplazamientos" en la variable
     window.cipher.decode(offset, string); // se mandan los valores obtenidos a la funcion encode 
-    document.getElementById(mensaje1).innerHTML = window.cipher.decode(offset,string); // llama  el resultado de la function para ponerlo en el sector dentro del HTML
+    document.getElementById('mensaje1').innerHTML = window.cipher.decode(offset,string); // llama  el resultado de la function para ponerlo en el sector dentro del HTML
 });
 }; 
 
