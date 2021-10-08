@@ -18,14 +18,40 @@ contenedorOcultar.style.visibility = ""
 alert('password incorrecto')
 }
 
+// ----------------aqui empieza funciones del DOM para cifrado---------
+
+//Traer el boton para activar la funcion de cifrar
+let botonDeCifrar = document.getElementById('botonCifrar')
+console.log(botonDeCifrar)
+
+
+//Hacer una funcion que le pase la llave a cypher
+let pasameLaLLaveyMensaje = () => {
+    //Traer la llave del numero de desplazamientos y mensaje
+    let inputDesplazamientos = document.getElementById('desplazamientos').value
+    let mostrarMensaje = document.getElementById('mensaje').value
+    console.log("ten la llave " + inputDesplazamientos + " y ten tu mensaje " + mostrarMensaje)
+    //darle la llave y el mensaje a cypher
+    cipher.encode(inputDesplazamientos,mostrarMensaje)
+    console.log(cipher.encode(inputDesplazamientos,mostrarMensaje))
+    document.getElementById('mensaje').innerHTML= cipher.encode(inputDesplazamientos,mostrarMensaje)
+}
+
+
+//Con add Event listener se agrega la funcion cifrar al dar el click
+botonDeCifrar.addEventListener('click', pasameLaLLaveyMensaje)
+
+
+// ----------------aqui empieza funciones del DOM para descifrado---------
+
 // Hacer funcionar los botones 
-window.onload = function() { //El evento load dispara el evento al final del proceso de carga del documento. En este punto, todos los objetos del documento son DOM
+/*window.onload = function() { //El evento load dispara el evento al final del proceso de carga del documento. En este punto, todos los objetos del documento son DOM
 // Boton cifrar
-const cifrar = document.getElementById("cifrar"); // llamar al boton en HTML
+let cifrar = document.getElementById("cifrar"); // llamar al boton en HTML
 cifrar.addEventListener("click", () => {
 // Al botón se le adicióna el click y lo que sucede cuando éste evento sucede.
-let string = document.getElementById('mensaje').value // se guarda el valor de "offset" en la variable con el cipher.js
-let offset = document.getElementById('desplazamientos').value // se guarda el valor "desplazamientos" en la variable 
+let string = document.getElementById('mensaje');// se guarda el valor de "offset" en la variable con el cipher.js
+let offset = document.getElementById('desplazamientos');// se guarda el valor "desplazamientos" en la variable 
 cipher.encode(offset, string); // se mandan los valores obtenidos a la funcion encode 
 document.getElementById('mensaje').innerHTML = cipher.encode(offset,string); // llama  el resultado de la function para ponerlo en el sector dentro del HTML
 }); 
@@ -34,8 +60,8 @@ document.getElementById('mensaje').innerHTML = cipher.encode(offset,string); // 
 const decifrar = document.getElementById("decifrar"); // llamar al boton html
 cifrar.addEventListener("click", () => {
     // Al botón se le adicióna el click y lo que sucede cuando éste evento sucede.
-    let string = document.getElementById('mensaje1').value // se guarda el valor de "offset" en la variable con el cipher.js
-    let offset = document.getElementById(desplazamientos).value  // se guarda el valor "desplazamientos" en la variable
+    let string = document.getElementById('mensaje1'); // se guarda el valor de "offset" en la variable con el cipher.js
+    let offset = document.getElementById(desplazamientos) // se guarda el valor "desplazamientos" en la variable
     window.cipher.decode(offset, string); // se mandan los valores obtenidos a la funcion encode 
     document.getElementById('mensaje1').innerHTML = window.cipher.decode(offset,string); // llama  el resultado de la function para ponerlo en el sector dentro del HTML
 });
