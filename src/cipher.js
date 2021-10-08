@@ -1,3 +1,5 @@
+//Aqui se agregan las funciones que codifican y decodifican el cifrado de nuestra página
+// Inicia funcion para codificar 
 window.cipher = { //El elemento window hace posible que la funcion se aplique a todos los elementos en el browseren
           encode: function encode (offset,string){  //funcion para codificar el numero de desplazamientos y el texto
             let desplazamiento = "" //string vacío en el cual el user introducira el mensaje
@@ -19,6 +21,8 @@ window.cipher = { //El elemento window hace posible que la funcion se aplique a 
             }
            return desplazamiento
       },
+      // Inicia funcion para decodificar 
+
       decode: function decode (offset,string){ //funcion para decodificar 
             let desplazamiento = ""            //se ingresa el numero de desplazamientos
             for(let i =0; i<string.length; i++){  // Itera cada que se ingresa dentro del string y la funcion 
@@ -44,6 +48,7 @@ window.cipher = { //El elemento window hace posible que la funcion se aplique a 
 }
 
 
+// Funciones probadas fallidas//
 /*
 
 
