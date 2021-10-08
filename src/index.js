@@ -24,7 +24,11 @@ alert('password incorrecto')
 let botonDeCifrar = document.getElementById('botonCifrar')
 console.log(botonDeCifrar)
 
+// Traer el boton para activar la funcion decifrar
+let botonDescifrar = document.getElementById('botonDescifrar')
+console.log(botonDescifrar)
 
+/*
 //Hacer una funcion que le pase la llave a cypher
 let pasameLaLLaveyMensaje = () => {
     //Traer la llave del numero de desplazamientos y mensaje
@@ -40,45 +44,62 @@ let pasameLaLLaveyMensaje = () => {
 
 //Con add Event listener se agrega la funcion cifrar al dar el click
 botonDeCifrar.addEventListener('click', pasameLaLLaveyMensaje)
+*/
+
+function cifrar(){
+let botonCifrar = document.getElementById("botonCifrar");
+let botonDes= document.getElementById("botonDescifrar");
+console.log(botonCifrar)
+console.log(botonDes)
+
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+/*
+let botonCifrar = document.getElementById('botonCifrar');
+botonCifrar.addEventListener("click", function() {
+    let offset = document.getElementById('desplazamientos').value;
+    let string = document.getElementById('mensajeuno').value;
+    console.log(offset)
+    window.cipher.encode(offset, string); // se mandan los valores obtenidos a la funcion encode 
+document.getElementById('mensajeuno').innerHTML = window.cipher.encode(offset,string);
+})
+*/
 
 // ----------------aqui empieza funciones del DOM para descifrado---------
-
+/*
 // Hacer funcionar los botones 
-/*window.onload = function() { //El evento load dispara el evento al final del proceso de carga del documento. En este punto, todos los objetos del documento son DOM
+window.onload = function() { //El evento load dispara el evento al final del proceso de carga del documento. En este punto, todos los objetos del documento son DOM
 // Boton cifrar
-let cifrar = document.getElementById("cifrar"); // llamar al boton en HTML
-cifrar.addEventListener("click", () => {
+const botonCifrar = document.getElementById("botonCifrar"); // llamar al boton en HTML
+botonCifrar.addEventListener("click", () => {
 // Al botón se le adicióna el click y lo que sucede cuando éste evento sucede.
-let string = document.getElementById('mensaje');// se guarda el valor de "offset" en la variable con el cipher.js
-let offset = document.getElementById('desplazamientos');// se guarda el valor "desplazamientos" en la variable 
-cipher.encode(offset, string); // se mandan los valores obtenidos a la funcion encode 
-document.getElementById('mensaje').innerHTML = cipher.encode(offset,string); // llama  el resultado de la function para ponerlo en el sector dentro del HTML
+let string = document.getElementById('mensajeuno').value;// se guarda el valor de "offset" en la variable con el cipher.js
+let offset = document.getElementById('desplazamientos').value;// se guarda el valor "desplazamientos" en la variable 
+console.log(botonCifrar)
+window.cipher.encode(offset, string); // se mandan los valores obtenidos a la funcion encode 
+document.getElementById('mensajeuno').innerHTML = window.cipher.encode(offset,string); // llama  el resultado de la function para ponerlo en el sector dentro del HTML
 }); 
 
 // Boton para decifrar
-const decifrar = document.getElementById("decifrar"); // llamar al boton html
-cifrar.addEventListener("click", () => {
+const botonDescifrar = document.getElementById("botonDescifrar"); // llamar al boton html
+botonDescifrar.addEventListener("click", () => {
     // Al botón se le adicióna el click y lo que sucede cuando éste evento sucede.
-    let string = document.getElementById('mensaje1'); // se guarda el valor de "offset" en la variable con el cipher.js
-    let offset = document.getElementById(desplazamientos) // se guarda el valor "desplazamientos" en la variable
+    let string = document.getElementById('caja').value; // se guarda el valor de "offset" en la variable con el cipher.js
+    let offset = document.getElementById('desplazamientos').value; // se guarda el valor "desplazamientos" en la variable
     window.cipher.decode(offset, string); // se mandan los valores obtenidos a la funcion encode 
-    document.getElementById('mensaje1').innerHTML = window.cipher.decode(offset,string); // llama  el resultado de la function para ponerlo en el sector dentro del HTML
+    document.getElementById('caja').innerHTML = window.cipher.decode(offset,string); // llama  el resultado de la function para ponerlo en el sector dentro del HTML
 });
 }; 
-
-
-//boton copiar
-function copyToClipBoard() {
-    alert("copy to clipboard activo")
-    var content = document.getElementById('copiar');
-    console.log(content)
-
-    content.select();
-    console.log("sect executed")
-   // document.execCommand('copy');
-
-    alert("Copied!");
-}
 */

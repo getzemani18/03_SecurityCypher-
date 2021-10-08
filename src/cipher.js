@@ -21,7 +21,7 @@ window.cipher = {
       },
       decode: function decode (offset,string){
             let desplazamiento = ""
-            for(let i =0;i<string.length;i++){
+            for(let i =0; i<string.length; i++){
                   if(string.charCodeAt(i)>=65 && string.charCodeAt(i)<=90){ // 65 al 90 son mayusculas en el código ASCCI
                   let temp = (string.charCodeAt(i)-65-offset+26) %26+65
                   let temp2 = String.fromCharCode(temp)
