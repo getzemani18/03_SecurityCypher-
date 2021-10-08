@@ -42,6 +42,7 @@ let pasameLaLLaveyMensaje = () => {
 botonDeCifrar.addEventListener('click', pasameLaLLaveyMensaje)
 
 
+
 // ----------------aqui empieza funciones del DOM para descifrado---------
 
 // Hacer funcionar los botones 
@@ -67,7 +68,7 @@ cifrar.addEventListener("click", () => {
 });
 }; 
 
-/*
+
 //boton copiar
 function copyToClipBoard() {
     alert("copy to clipboard activo")

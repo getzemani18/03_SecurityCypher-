@@ -58,7 +58,7 @@ h2 {
 }
 
 /* Modificacion de la caja -codificar*/
-#mensaje {
+#mensajeuno {
   width: 350px;
   height: 50px;
   margin: 10px;
@@ -68,7 +68,7 @@ h2 {
 
 /*Boton cifrar*/
 
-#cifrar{
+.cifrar1{
   
   background: #eb94d0;
   /*crear degradados*/
@@ -94,7 +94,7 @@ font-family: Arial;
 
 /*Boton Decifrar*/
 
-#decifrar{
+.decifrar2{
   
   background: #eb94d0;
   /*crear degradados*/
@@ -119,7 +119,7 @@ font-family: Arial;
 }
 /*Poner el cursor encima*/
 
-#decifrar:hover {
+.decifrar2:hover {
   background: #2079b0;
   background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
   background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
@@ -130,7 +130,7 @@ font-family: Arial;
 }
 
 /*Boton Copiar*/
-#copiar{
+#copy{
   
   background: #eb94d0;
   /*crear degradados*/
@@ -157,7 +157,7 @@ font-family: Arial;
 
 /*Poner el cursor encima*/
 
-#copiar:hover {
+#copy:hover {
   background: #2079b0;
   background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
   background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);

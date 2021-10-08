@@ -48,6 +48,10 @@ Cada miembro del staff cuenta con un password o "pseudónimo" para acceder.
 
 ## 5. Pseudocódigo
 
+**Poblema:** Me eh encontrado con varios problemas en mi Antro, uno de ellos es que varias personas han estado entrando sin autorización, quiero crear una contraseña para que solo algunas personas puedan pasar, pero como puedo hacerle, ademas de que necesito comunicarme con ellos de otra manera
+
+**Solucion:** Se me ocurrio la idea de hacer un cifrado y decifrado donde solo esas personas puedan entrar a travez de una contraseña dada.
+
 
 ## Seccion HTML
 
@@ -112,14 +116,6 @@ function copyToClipBoard() {
 + HTML5
 + CSS
 + JavaScript
-
----
-
-## 7. Testing
-
----
-
-## 8. Deployment
 
 ---
 

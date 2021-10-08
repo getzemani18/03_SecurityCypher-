@@ -33,14 +33,15 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
     <h3>Mensaje</h3>
     <input type="text" id="mensajeuno">
     <div id="button1">
-    <button id="botonCifrar" type="button" value="cifrar"> CIFRAR </button> 
-    <button type="button" value="decifrar" onclick="descifrar()">DESCIFRAR</button>
+    <button class="cifrar1" id="botonCifrar" type="button" value="cifrar"> CIFRAR </button> 
+    <button class="decifrar2" type="button" value="decifrar" onclick="descifrar()">DESCIFRAR</button>
   </div>
 
   <!-- Recuadro y boton copiar -->
     <h4>Descifra el mensaje</h4>
-    <textarea  class="mensaje1" id="mensaje"></textarea>
-    <button  id="copiar" onclick="copyToClipBoard()">Copy</button>
+    <textarea class="mensaje1" id="textArea"></textarea>
+   <button id="copy" onclick="copyToClipBoard()">Copy</button>
+    
     
 <!-- Hasta aqui cierra el div de ocultar -->
    </div> 
@@ -62,6 +63,7 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
      
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+    <script src="boton.js"></script>
 
   </body>
 </html>
