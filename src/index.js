@@ -99,7 +99,7 @@ botonDescifrar.addEventListener("click", () => {
     let string = document.getElementById('mensajeuno').value; // se guarda el valor de "offset" en la variable con el cipher.js
     let offset = document.getElementById('desplazamientos').value; // se guarda el valor "desplazamientos" en la variable
     window.cipher.decode(offset, string); // se mandan los valores obtenidos a la funcion encode 
-    document.getElementById('mensajedos').innerHTML = window.cipher.decode(offset,string); // llama  el resultado de la function para ponerlo en el sector dentro del HTML
+    document.getElementById('mensajedos').innerHTML = window.cipher.decode(parseInt(offset),string); // llama  el resultado de la function para ponerlo en el sector dentro del HTML
 });
 }; 
 
