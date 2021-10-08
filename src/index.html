@@ -31,16 +31,25 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
   
       <!-- Primer recuadro del cifrado -->
     <h3>Mensaje</h3>
-    <input type="text" id="mensajeuno">
+    <div>
+      <input type="text" id="mensajeuno">  
+    </div>
+    
     <div id="button1">
-    <button class="cifrar1" id="botonCifrar" type="button" value="cifrar" onclick="cifrar()"> CIFRAR </button> 
-    <button class="decifrar2" id="botonDescifrar" type="button" value="decifrar" onclick="descifrar()">DESCIFRAR</button>
+    <button class="cifrar1" id="botonCifrar" type="button" value="cifrar" > CIFRAR </button> 
+    <button class="decifrar2" id="botonDescifrar" type="button" value="decifrar" >DESCIFRAR</button>
   </div>
 
   <!-- Recuadro y boton copiar -->
     <h4>Descifra el mensaje</h4>
-    <div id="caja"><textarea class="mensaje1" id="textArea"></textarea></div>
-   <button id="copy" onclick="copyToClipBoard()">Copy</button>
+    <div>
+      <!-- El disabledatributo es un atributo booleano.El disabledatributo se puede configurar para evitar que un usuario use el <textarea>elemento hasta que se cumpla alguna otra condición (como seleccionar una casilla de verificación, etc.). Entonces, un JavaScript podría eliminar el valor deshabilitado y hacer que el <textarea>elemento sea utilizable. -->
+      <textarea class="mensaje1" id="mensajedos" disabled></textarea>  
+    </div
+    
+   
+
+
     
     
 <!-- Hasta aqui cierra el div de ocultar -->
