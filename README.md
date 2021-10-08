@@ -42,15 +42,20 @@ Cada miembro del staff cuenta con un password o "pseudónimo" para acceder.
 #### Window 3 
 ![UI](./src/assets/Boceto_UIapp.png)
 
+#### Window 4
+![UI](src/assets/producto_final.png)
+
 
 
 ---
 
 ## 5. Pseudocódigo
 
-**Poblema:** Me eh encontrado con varios problemas en mi Antro, uno de ellos es que varias personas han estado entrando sin autorización, quiero crear una contraseña para que solo algunas personas puedan pasar, pero como puedo hacerle, ademas de que necesito comunicarme con ellos de otra manera
+**Problema:** Recientemente los antros han registrado fallas en la seguridad, debido a que entran muchas personas es necesario contar con un control y mayor organización dentro y fuera del lugar, para evitar robos y conflictos dentro del lugar.Por ello es necesario que todo el personal de seguridad cuente con un sistema de comunicación interno.
 
-**Solucion:** Se me ocurrio la idea de hacer un cifrado y decifrado donde solo esas personas puedan entrar a travez de una contraseña dada.
+**Solución:** Presentamos una página cuya funcion es  cifrar y decifrar mensajes a los cuales solo pueden tener acceso el personal de confianza del antro mediante una  contraseña. Esta puede ser utilizada en celulares y computadoras
+
+**Implementación:** Se utilizará el método del "Cifrado César" (utilizaremos una formula para convertir texto a lenguaje númerico con el código ASCII) para codificar y decodificar los mensajes que el usuario ingrese en la página.
 
 
 ## Seccion HTML
@@ -59,12 +64,12 @@ Cada miembro del staff cuenta con un password o "pseudónimo" para acceder.
  <textarea id="textArea">We are learning to copy text to clipboard in JavaScript.</textarea>
     <button onclick="copyToClipBoard()">Copy</button>
 ```
-- Crear funcion cipher que por medio de la formula ( x + n) % 26 ayude a encriptar el string de usuario e imprima el resultado en html. Asi mismo, crear funcion decipher para descifrar string dado por usuario e imprimir resultado en html.
+- Crear función cipher que por medio de la formula ( x + n) % 26 ayude a encriptar el string de usuario e imprima el resultado en html. Asi mismo, crear funcion decipher para descifrar string dado por usuario e imprimir resultado en html.
 
 ## Seccion JavaScript
 
 ``` JS
-Alert "Ingresa tu clave de acceso o Pseudocodigo"
+Alert "Ingresa tu clave de acceso o Pseudónimo"
 ```
 
 ``` js
@@ -109,6 +114,23 @@ function copyToClipBoard() {
 }
 ```
 
+``` js
+botonCifrar.addEventListener("click", () => 
+let string = document.getElementById('mensajeuno').value;
+let offset = document.getElementById('desplazamientos').value;
+
+``` 
+
+## Seccion JavaScript Cipher
+ 
+``` js
+     window.cipher = {
+         encode: function encode (offset,string){ 
+            
+            decode: function decode (offset,string){
+```    
+
+
 ---
 
 ## 6.  Lenguajes Utilizados
@@ -118,7 +140,18 @@ function copyToClipBoard() {
 + JavaScript
 
 ---
+## 7. Testing
+
+Al iniciar la página muestra un "alert" que te pide la contraseña que es: 123
+
+Si el user coloca un password incorrecto, la interfaz se esconde.
+
+
+
+
+---
 
 ## 9.  CopyRight
 
 © Copyright 2021-Proyecto#3-SegurityCypher  Getzemani Ramirez & Monica Macal
+
